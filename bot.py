@@ -40,5 +40,4 @@ async def handle_tiktok_request(message: Message, bot: Bot) -> None:
         if settings.reply_to_message:
             await message.reply_video(video=video, caption=caption)
         else:
-            await bot.send_video(chat_id=message.chat.id, video=video, caption=caption)
             await bot.send_video(chat_id=config.CHANNEL_ID, video=video, caption=caption)
