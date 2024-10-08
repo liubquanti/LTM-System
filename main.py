@@ -1,4 +1,5 @@
 import asyncio
+from colorama import Fore
 
 from aiogram import Bot
 
@@ -12,4 +13,5 @@ async def start() -> None:
 
 
 if __name__ == "__main__":
+    print(f"{Fore.YELLOW}[LOG] Систему LTM запущено!{Fore.RESET}")
     asyncio.run(start())
